@@ -28,15 +28,10 @@ understand it.
 
 | Asset             | What it costs if this goes wrong                                          |
 |-------------------|---------------------------------------------------------------------------|
-| Staff details     | If the data is exposed, then the privacy of the staff can be compromised. |
-|                   | And if manipulated, wrong person would be contacted and would be able to  |
-|                   | read the information shared with them.                                    |
-| Login accounts    | If credentials are exposed, someone could impersonate a staff member or   |
-|                   | someone could gain unauthorized access or be blocked from their account.  |
-| Role assignments  | Attackers can gain more access if they get to know a particular user has  |
-|                   | more priviledged access.                                                  |
-| Shared resources  | If resources are exposed, internal applications/data and work can be      |
-|                   | revealed to outsiders which can be used for malicious benefits.           |
+| Staff details     | If the data is exposed, then the privacy of the staff can be compromised. And if manipulated, wrong person would be contacted and would be able to read the information shared with them. |
+| Login accounts    | If credentials are exposed, someone could impersonate a staff member or someone could gain unauthorized access or be blocked from their account. |
+| Role assignments  | Attackers can gain more access if they get to know a particular user has more priviledged access.                                                  |
+| Shared resources  | If resources are exposed, internal applications/data and work can be revealed to outsiders which can be used for malicious benefits. |
 
 ## 3. The requirements
 
