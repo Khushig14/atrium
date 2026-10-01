@@ -1,7 +1,7 @@
 # Week 2 security requirements
 
-Your name:
-Date:
+Your name: Khushi Ganatra
+Date: 1/10/2026
 
 Fill this in as you work, rather than at the end. Where you are unsure, write
 that you are unsure and say why. A sentence you can support is worth more than a

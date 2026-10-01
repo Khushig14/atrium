@@ -4,3 +4,5 @@ data/
 
 # Students' own notes and write-ups. Never tracked, so git pull cannot touch them.
 my-work/
+
+.DS_Store
