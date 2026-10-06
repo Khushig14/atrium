@@ -29,13 +29,17 @@ Say which assistant you asked, and what it said in a sentence or two.
 
 Answer all four. If you cannot answer one, say so.
 
-**Where does the data come from?** - It comes from USERS database in seed-data.js
+**Where does the data come from?** 
+It comes from USERS database in seed-data.js
 
-**What happens to it on the way?** - It hashes each password and passes the records to the insert statement.
+**What happens to it on the way?** 
+It hashes each password and passes the records to the insert statement.
 
-**Where does it become dangerous?** - If outside input is added to sql statements, SQL injection can occur before database is run.
+**Where does it become dangerous?** 
+If outside input is added to sql statements, SQL injection can occur before database is run.
 
-**What stands in the way?** - The placeholders and sqlite3’s parameter binding keep each supplied field as a value rather than SQL syntax.
+**What stands in the way?** 
+The placeholders and sqlite3’s parameter binding keep each supplied field as a value rather than SQL syntax.
 
 ## 4. What the running application shows
 
@@ -58,18 +62,23 @@ Delete the two that do not apply.
 
 **Not real** 
 
-**Why, in two or three sentences.** Write for somebody who has not seen any of this. - The SQL text is made from fixed strings, and the user-record fields are passed separately through placeholders. I found no user input being added to this INSERT statement.
+**Why, in two or three sentences.** Write for somebody who has not seen any of this.
+The SQL text is made from fixed strings, and the user-record fields are passed separately through placeholders. I found no user input being added to this INSERT statement.
 
-**What would change my mind.** If new information would alter this answer, say what. - I would reconsider if I found a path that puts user-controlled input into the SQL text, or if the code being run differs from the code I inspected.
+**What would change my mind.** If new information would alter this answer, say what.
+I would reconsider if I found a path that puts user-controlled input into the SQL text, or if the code being run differs from the code I inspected.
 
-**How far this answer reaches.** What you established applies to a particular page, a particular set of data and this version of the application. Say what you have shown, and be careful not to claim more. - This conclusion is about the INSERT in reset.js, using the fixed seed data in this version of the app. It does not establish that every database query in the application is safe.
+**How far this answer reaches.** What you established applies to a particular page, a particular set of data and this version of the application. Say what you have shown, and be careful not to claim more.
+This conclusion is about the INSERT in reset.js, using the fixed seed data in this version of the app. It does not establish that every database query in the application is safe.
 
 ## 6. Back to the assistant
 
 The thing you noted in section 2, that you had not verified at the time.
 
-- Did I check it? - Yes. I checked reset.js, the USERS data in seed-data.js, and how the insert passes values to the prepared statement.
-- Was it right? - Yes for this insert: its SQL text is fixed, and the record fields are passed through placeholders. That does not prove every query in the app is safe.
+- Did I check it? 
+Yes. I checked reset.js, the USERS data in seed-data.js, and how the insert passes values to the prepared statement.
+- Was it right? 
+Yes for this insert: its SQL text is fixed, and the record fields are passed through placeholders. That does not prove every query in the app is safe.
 
 ---
 
