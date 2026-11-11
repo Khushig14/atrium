@@ -5,13 +5,10 @@ function listColleagues(db) {
 }
 
 export function searchDirectory(db, q) {
-  const sql =
-    "SELECT id, display_name, email, department, role FROM users " +
-    "WHERE display_name LIKE '%" + q + "%' " +
-    "OR department LIKE '%" + q + "%'";
-
-  return db.prepare(sql).all();
-}
+      const sql = "SELECT id, display_name, email, department, role FROM users WHERE display_name LIKE ? OR department LIKE ?";
+      const pattern = "%" + q + "%";
+      return db.prepare(sql).all(pattern, pattern);
+    }
 
 /** GET /directory */
 export function showDirectory(req, res) {
